@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 94%);
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+}
+
+.container {
+  margin-top: 10rem;
+  padding: 3rem;
+  border-radius: 20px 20px 200px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.ages {
+  display: flex;
+  gap: 2rem;
+  padding: 0 0 1rem 0;
+}
+
+.ages p {
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+}
+
+.ages input {
+  border-radius: 5px;
+  height: 4.5rem;
+  max-width: 10rem;
+  padding-left: 1.5rem;
+  border: 1px solid hsl(0, 1%, 44%);
+  outline: none;
+}
+
+input[type="number"] {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.ages input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+.ages input::placeholder {
+  position: relative;
+  bottom: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.line {
+  border: 1;
+  height: 1px;
+  background: hsl(0, 1%, 44%);
+  width: 600px;
+}
+
+.btn {
+  background-color: hsl(259, 100%, 65%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 1.8rem;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 2rem;
+  float: right;
+}
+
+.quite {
+  display: flex;
+  align-items: center;
+}
+
+.agesText {
+  max-width: 600px;
+  line-height: 7rem;
+}
+
+.texts {
+  font-size: 6rem;
+}
+
+.ageResult {
+  color: hsl(259, 100%, 65%);
+}
