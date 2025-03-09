@@ -100,3 +100,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .ageResult {
   color: hsl(259, 100%, 65%);
 }
+
+.volumeCheck {
+  color: red;
+  font-weight: 500;
+  display: none;
+}
