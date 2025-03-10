@@ -19,15 +19,12 @@ body {
   border-radius: 20px 20px 200px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: hsl(0, 0%, 100%);
-  width: 100%;
-  max-width: 600px;
 }
 
 .ages {
   display: flex;
   gap: 2rem;
   padding: 0 0 1rem 0;
-  flex-wrap: wrap;
 }
 
 .ages p {
@@ -35,7 +32,6 @@ body {
   font-weight: 700;
   letter-spacing: 4px;
   font-size: 0.8rem;
-  flex: 1 1 100%;
 }
 
 .ages input {
@@ -45,7 +41,6 @@ body {
   padding-left: 1.5rem;
   border: 1px solid hsl(0, 1%, 44%);
   outline: none;
-  width: 100%;
 }
 
 input[type="number"] {
@@ -74,7 +69,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 1;
   height: 1px;
   background: hsl(0, 1%, 44%);
-  width: 100%;
+  width: 600px;
 }
 
 .btn {
@@ -112,6 +107,8 @@ input[type="number"]::-webkit-outer-spin-button {
   display: none;
 }
 
+/* Responsive */
+
 @media (max-width: 768px) {
   .container {
     margin-top: 5rem;
@@ -121,6 +118,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .ages {
     gap: 1rem;
     flex-direction: column;
+    width: 100%;
   }
 
   .ages p {
@@ -134,15 +132,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .btn {
     font-size: 1.8rem;
-    padding: 0.8rem 1.5rem;
     float: none;
-    margin-top: 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .texts {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .line {
